@@ -2,11 +2,11 @@ import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
 import '../styles/globals.css';
 
-const title = 'Linkedin Bio Generator';
-const description = 'Generate your next Linkedin bio in seconds.';
+const title = 'Car Name Generator';
+const description = 'Generate your next Car Name in seconds.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://linkedinbio.io'),
+  metadataBase: new URL('https://carname.io'),
   title,
   description,
   openGraph: {

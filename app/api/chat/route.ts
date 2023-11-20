@@ -20,12 +20,12 @@ export async function POST(req: Request) {
     messages: [
       {
         role: 'user',
-        content: `Generate 2 ${vibe} twitter biographies with no hashtags and clearly labeled "1." and "2.". ${
-          vibe === 'Funny'
-            ? "Make sure there is a joke in there and it's a little ridiculous."
+        content: `Generate 2 car names for ${vibe} clearly labeled "1." and "2.". ${
+          vibe === 'OffRoad'
+            ? "Make sure there is a praise in there and it's a little manly."
             : null
         }
-          Make sure each generated biography is less than 160 characters, has short sentences that are found in Twitter bios, and base them on this context: ${bio}${
+          Make sure each generated car name is less than 16 characters, has short sentences that describe about the car, and base them on this context: ${bio}${
           bio.slice(-1) === '.' ? '' : '.'
         }`,
       },
